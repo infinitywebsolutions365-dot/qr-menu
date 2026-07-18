@@ -26,7 +26,7 @@ function EditMenuItem(){
 
     const fetchMenu = async () => {
         try {
-            const res = await axios.get(`http://localhost:5000/api/menu/item/${id}`);
+            const res = await axios.get(`https://qr-menu-oxgp.onrender.com/api/menu/item/${id}`);
     
             setMenu(res.data);
 
@@ -76,7 +76,7 @@ function EditMenuItem(){
     }
 
     await axios.put(
-      `http://localhost:5000/api/menu/${id}`,
+      `https://qr-menu-oxgp.onrender.com/api/menu/${id}`,
       formData
     );
 

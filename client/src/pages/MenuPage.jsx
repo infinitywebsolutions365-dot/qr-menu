@@ -22,7 +22,7 @@ function MenuPage() {
   const fetchMenu = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:5000/api/menu/${restaurantId}`
+        `https://qr-menu-oxgp.onrender.com/api/menu/${restaurantId}`
       );
 
       setMenus(res.data);
@@ -34,7 +34,7 @@ function MenuPage() {
   const fetchRestaurant = async () => {
     try {
         const res = await axios.get(
-            `http://localhost:5000/api/restaurants/${restaurantId}`
+            `https://qr-menu-oxgp.onrender.com/api/restaurants/${restaurantId}`
         );
         setRestaurant(res.data);
     } catch(error) {

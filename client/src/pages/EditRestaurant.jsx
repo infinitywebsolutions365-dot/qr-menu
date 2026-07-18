@@ -56,7 +56,7 @@ function EditRestaurant() {
   const fetchRestaurant = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:5000/api/restaurants/${restaurantId}`
+        `https://qr-menu-oxgp.onrender.com/api/restaurants/${restaurantId}`
       );
 
       setRestaurant({
@@ -82,7 +82,7 @@ function EditRestaurant() {
       }
 
       await axios.put(
-        `http://localhost:5000/api/restaurants/${restaurantId}`,
+        `https://qr-menu-oxgp.onrender.com/api/restaurants/${restaurantId}`,
         formData
       );
 

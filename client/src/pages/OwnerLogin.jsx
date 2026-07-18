@@ -22,7 +22,7 @@ function OwnerLogin() {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/owner/login",
+        "https://qr-menu-oxgp.onrender.com/api/owner/login",
         formData
       );
 

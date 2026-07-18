@@ -56,7 +56,7 @@ function AddMenuItem() {
     formData.append("restaurantId",restaurantId);
 
     await axios.post(
-      "http://localhost:5000/api/menu",
+      "https://qr-menu-oxgp.onrender.com/api/menu",
       formData
     );
 

@@ -28,7 +28,7 @@ function OwnerDashboard() {
 
     const fetchRestaurant = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/api/restaurants/${restaurantId}`);
+        const res = await axios.get(`https://qr-menu-oxgp.onrender.com/api/restaurants/${restaurantId}`);
 
         setRestaurant(res.data);
         console.log(res.data);
@@ -41,7 +41,7 @@ function OwnerDashboard() {
     const handleToggleStatus = async () => {
       try {
         const res = await axios.put(
-          `http://localhost:5000/api/restaurants/toggle/${restaurantId}`
+          `https://qr-menu-oxgp.onrender.com/api/restaurants/toggle/${restaurantId}`
         );
 
         setIsOpen(res.data.isOpen);
@@ -53,7 +53,7 @@ function OwnerDashboard() {
 
     const fetchMenus = async () => {
         try {
-            const res = await axios.get("http://localhost:5000/api/menu");
+            const res = await axios.get("https://qr-menu-oxgp.onrender.com/api/menu");
             setMenus(res.data);
         } catch (error) {
             console.log(error);
@@ -62,7 +62,7 @@ function OwnerDashboard() {
 
     const handleDelete = async (id) => {
       try{
-        await axios.delete(`http://localhost:5000/api/menu/${id}`);
+        await axios.delete(`https://qr-menu-oxgp.onrender.com/api/menu/${id}`);
 
         alert("Menu Item Deleted Successfully");
 
