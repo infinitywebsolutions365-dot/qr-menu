@@ -9,7 +9,7 @@ function QRCodePage() {
     
 
   const menuUrl =
-    `https://cosmic-speculoos-5be412.netlify.app/${restaurantId}` ;
+    `https://qr-menu-oxgp.onrender.com/${restaurantId}` ;
 
     const qrRef = useRef();
 
