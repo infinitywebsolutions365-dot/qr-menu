@@ -23,6 +23,9 @@ app.use("/api/menu", menuRoutes);
 
 app.use("/api/owner",restaurantOwnerRoutes);
 
+console.log(process.version);
+console.log(process.env.MONGO_URI);
+
 mongoose
   .connect(process.env.MONGO_URI)
   .then(() => console.log("MongoDB Connected"))
